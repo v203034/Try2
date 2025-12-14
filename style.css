@@ -85,9 +85,9 @@ body {
 .awesome .front {
 	background: #fbec3f;
 
-	background-image: -webkit-linear-gradient(bottom, rgba(251,236,63,.0) 75%, #f7bb37 95%);
-	background-image: -moz-linear-gradient(bottom, rgba(251,236,63,.0) 75%, #f7bb37 95%);
-    background-image: linear-gradient(bottom, rgba(251,236,63,.0) 75%, #f7bb37 95%);
+	background-image: -webkit-linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
+	background-image: -moz-linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
+    background-image: linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
 }
 
 .awesome h4 {
