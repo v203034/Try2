@@ -16,27 +16,19 @@ body {
 
 .awesome {
 	position: relative;
-	width: 180px;
-	height: 180px;
+	width: 140px;
+	height: 140px;
 	margin: 0 auto;
 	
 	backface-visibility: hidden;
 }
 
 .awesome .sticky {
-	transform: rotate(45deg);
-}
-
-.awesome:hover .sticky {
-	transform: rotate(10deg);
-}
-
-.awesome .sticky {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 180px;
-	height: 180px;
+	width: 140px;
+	height: 140px;
 }
 
 .awesome .reveal {
