@@ -16,8 +16,8 @@ body {
 
 .awesome {
 	position: relative;
-	width: 140px;
-	height: 140px;
+	width: 250px;
+	height: 250px;
 	margin: 0 auto;
 	
 	backface-visibility: hidden;
@@ -27,15 +27,15 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 140px;
-	height: 140px;
+	width: 250px;
+	height: 250px;
 }
 
 .awesome .reveal {
   box-shadow: 0 1px 0px rgba(0,0,0,.15);
   font-family: 'helvetica neue', arial;
   font-weight: 200;
-  line-height: 140px;
+  line-height: 250px;
   text-align: center;
   cursor: pointer;
 }
@@ -46,8 +46,8 @@ body {
 
 .awesome _wrapper {
 	position: absolute;
-	width: 180px;
-	height: 180px;
+	width: 250px;
+	height: 250px;
 	left: 0px;
 	top: 0px;
 	overflow: hidden;
@@ -55,8 +55,8 @@ body {
 
 .awesome {
 	position: absolute;
-	width: 140px;
-	height:  140px;
+	width: 250px;
+	height:  250px;
 	border-radius: 999px;
 }
 
