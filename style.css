@@ -19,15 +19,27 @@ body {
 	width: 180px;
 	height: 180px;
 	margin: 0 auto;
-  
-  backface-visibility: hidden;
+	
+	backface-visibility: hidden;
 }
 
 .awesome .sticky {
 	transform: rotate(45deg);
 }
 
-.awesome:hover .sticky { 
+.awesome:hover .sticky {
+	transform: rotate(10deg);
+}
+
+.awesome .sticky {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 180px;
+	height: 180px;
+}
+
+.awesome .reveal .circle {
   box-shadow: 0 1px 0px rgba(0,0,0,.15);
   font-family: 'helvetica neue', arial;
   font-weight: 200;
@@ -55,6 +67,27 @@ body {
 	height:  140px;
 	margin: 20px;
 	border-radius: 999px;
+}
+
+.awesome .back {
+	height: 10px;
+	top: 30px;
+}
+
+.awesome:hover .back {
+	height: 90px;
+	top: 110px;
+}
+
+.awesome:hover .back .circle {
+	margin-top: -50px;
+}
+
+.awesome .front {
+	height: 150px;
+	bottom: 0;
+	top: auto;
+	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
 }
 
 .awesome:hover .front {
