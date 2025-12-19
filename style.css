@@ -38,10 +38,7 @@ body {
   line-height: 250px;
   text-align: center;
   cursor: pointer;
-}
-
-.awesome .reveal {
-	background: #fafafa;
+  background: #fafafa;
 }
 
 .awesome _wrapper {
@@ -71,7 +68,7 @@ body {
 }
 
 .awesome .front {
-	height: 150px;
+	height: 250px;
 	bottom: 0;
 	top: auto;
 	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
