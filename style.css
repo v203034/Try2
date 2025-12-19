@@ -1,6 +1,9 @@
+/* Reset */
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  font-family: 'Gochi Hand', cursive;
 }
 
 body {
@@ -10,101 +13,76 @@ body {
   align-items: center;
 }
 
-.animate {
-  transition: all 750ms ease-in-out;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Sticky note container */
 .awesome {
-	position: relative;
-	width: 250px;
-	height: 250px;
-	margin: 0 auto;
-	
-	backface-visibility: hidden;
-}
-
-.awesome .sticky {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 250px;
-	height: 250px;
-}
-
-.awesome .reveal {
-  box-shadow: 0 1px 0px rgba(0,0,0,.15);
-  font-family: 'helvetica neue', arial;
-  font-weight: 200;
-  line-height: 250px;
-  text-align: center;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
   cursor: pointer;
-  background: #fafafa;
+  overflow: hidden;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
-.awesome _wrapper {
-	position: absolute;
-	width: 250px;
-	height: 250px;
-	left: 0px;
-	top: 0px;
-	overflow: hidden;
+/* Front layer */
+.awesome .front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
 }
 
-.awesome {
-	position: absolute;
-	width: 250px;
-	height:  250px;
-	border-radius: 999px;
-}
-
+/* Back layer */
 .awesome .back {
-	height: 10px;
-	top: 30px;
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: 30px;
+  left: 0;
+  background: rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.awesome:hover .front {
+  height: 70px;
+  box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
+  background-color: #e2d439;
 }
 
 .awesome:hover .back {
-	height: 90px;
-	top: 110px;
-}
-
-.awesome .front {
-	height: 250px;
-	bottom: 0;
-	top: auto;
-	-webkit-box-shadow: 0 -140px 20px -140px rgba(0,0,0,.3);
-}
-
-.awesome:hover .front {
-	height: 70px;
-	-webkit-box-shadow: 0 -60px 10px -60px rgba(0,0,0,.1);
-}
-
-.awesome .front {
-	background: #fbec3f;
-
-	background-image: -webkit-linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
-	background-image: -moz-linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
-    background-image: linear-gradient(top, rgba(251,236,63,.0) 75%, #f7bb37 95%);
+  height: 90px;
+  top: 110px;
 }
 
 .awesome h4 {
-    font-family: 'helvetica neue', arial;
-    font-weight: 200;
-    text-align: center;
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    line-height: 140px;
-	transition: opacity 50ms linear 400ms;
+  margin: 0;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
 .awesome:hover h4 {
-	opacity: 0;
-	
-	transition: opacity 50ms linear 300ms;
+  opacity: 0;
 }
 
-.awesome:hover .front {
-	background-color: #e2d439;
-	background-position: 0 100px;
-}
+/* Different colors for each note */
+.note1 .front { background-color: #fbec3f; }
+.note2 .front { background-color: #ff6b6b; }
+.note3 .front { background-color: #1dd1a1; }
+.note4 .front { background-color: #54a0ff; }
+.note5 .front { background-color: #f368e0; }
